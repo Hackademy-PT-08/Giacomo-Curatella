@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TracciaUno - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stili/bootstrap.min.css">
+    <link rel="stylesheet" href="./stili/myStyle.css">
+  </head>
+  <body>
+    <main>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+            <div class="container">
+              <a class="navbar-brand" href="#">Il mio sito</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <!-- inizio della lista che contiene gli elementi del menu -->
+                <ul class="navbar-nav me-auto" id="menu">
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <section class="container-fluid parallax-uno">
+            <section class="container">
+                <div class="row justify-content-center py-5 text-white">
+                    <h2 class="text-center text-white py-4">Articolo del giorno</h2>
+                    <div class="col-4">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet placeat consequuntur minus non ab perspiciatis nisi commodi. Voluptates nihil eveniet temporibus iure nostrum minima officiis, deleniti ipsum, omnis suscipit repellendus? Officia repellendus cumque labore facere qui perspiciatis non repellat. Modi illo autem non repellat explicabo voluptate ipsam maxime, ea aliquid? Numquam officia nobis aliquid, sint quod, autem ipsum necessitatibus pariatur accusamus molestiae expedita laboriosam aperiam quisquam maxime sunt laborum assumenda dicta tempore quaerat. Voluptatibus, eos architecto? Minima eius quos cupiditate omnis eos temporibus ipsa cumque eligendi, ab dolorem atque aperiam dignissimos quia aspernatur illo dolor, id illum deserunt maxime praesentium?
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet placeat consequuntur minus non ab perspiciatis nisi commodi. Voluptates nihil eveniet temporibus iure nostrum minima officiis, deleniti ipsum, omnis suscipit repellendus? Officia repellendus cumque labore facere qui perspiciatis non repellat. Modi illo autem non repellat explicabo voluptate ipsam maxime, ea aliquid? Numquam officia nobis aliquid, sint quod, autem ipsum necessitatibus pariatur accusamus molestiae expedita laboriosam aperiam quisquam maxime sunt laborum assumenda dicta tempore quaerat. Voluptatibus, eos architecto? Minima eius quos cupiditate omnis eos temporibus ipsa cumque eligendi, ab dolorem atque aperiam dignissimos quia aspernatur illo dolor, id illum deserunt maxime praesentium?
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="container-fluid parallax-due">
+            <section class="container">
+                <div class="row" id="riga">
+                </div>
+            </section>
+        </section>
+
+        <section class="container py-5">
+            <form>
+                <fieldset>
+                  <legend class="text-center mb-3">Modulo di contatto</legend>
+                  <!-- nome -->
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Nome" required>
+                  </div>
+                  <!-- cognome -->
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="cognome" aria-describedby="emailHelp" placeholder="Cognome" required>
+                  </div>
+                  <!-- e-mail -->
+                  <div class="form-group">
+                    <label for="exampleInputEmail1" class="form-label mt-4">Indirizzo e-mail</label>
+                    <input type="email" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="Inserisci il tuo indirizzo di posta" required>
+                    <small id="emailHelp" class="form-text text-muted">Non condivideremo questa informazione con nessuno.</small>
+                  </div>
+                  <!-- messaggio  -->
+                  <div class="form-group">
+                    <label for="exampleTextarea" class="form-label mt-4">Messaggio</label>
+                    <textarea class="form-control" id="messaggio" rows="3"></textarea>
+                  </div>
+
+
+
+                  
+                  <fieldset class="form-group mt-3">
+                    <div class="form-check d-flex gap-1 justify-content-center">
+                      <input class="form-check-input" type="checkbox" value="PrivacyOK" id="privacy" required>
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Autorizzo il trattamento dei dati nel rispetto delle norme della privacy
+                      </label>
+                    </div>
+                </fieldset>
+
+                <div class="row d-flex mt-3 justify-content-center">
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary px-4" id="myBtn">Invia</button>
+                    </div>
+                </div>
+              </form>
+        </section>
+    </main>
+    <!-- modal -->
+    <div class="modal fade" id="myModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Completato</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Tutti i dati sono stati inviati correttamente al server!
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./scripts/categories.js"></script>
+    <script src="./scripts/menuItems.js"></script>
+    <script src="./scripts/articles.js"></script>
+    <script src="./scripts/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

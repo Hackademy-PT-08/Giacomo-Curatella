@@ -1,0 +1,5 @@
+let bookTitle;
+bookTitle = "La coscienza di Zeno";
+let bookDescription = `La coscienza di Zeno (1923), uno dei capolavori della letteratura europea del Novecento, è la tragicomica vicenda di un "inetto a vivere", che, su sollecitazione del proprio psicanalista, ripercorre le tappe della sua oscillante e inconcludente esistenza punteggiata dai ripetuti, e inutili, tentativi di smettere di fumare. Zeno Cosini è una specie di marionetta tirata da fili che, quanto più indaga, gli sfuggono. È schiacciato da un destino che sembra ineluttabile: desideroso dell'Ordine, è sommerso dal Caos; alla infantile ricerca di certezze, si ritrova compiaciuto funambolo sul filo oscillante della catastrofe personale e familiare. Introduzione di Franco Marcoaldi.`;
+
+console.log("Titolo: " + bookTitle + "\nDescrizione: " + bookDescription);

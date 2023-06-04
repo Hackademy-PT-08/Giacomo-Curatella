@@ -1,0 +1,1 @@
+alert(`Piacere di conoscerti ${name} ${surname}, adesso sappiamo che hai ${age} anni!`)
