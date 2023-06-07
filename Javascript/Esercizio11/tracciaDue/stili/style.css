@@ -1,0 +1,47 @@
+:root {
+    font-size: 14px;
+}
+
+body {
+    background-color: #f5e5f9;
+    color: #81568a;
+}
+
+.my-text-color {
+    color: #81568a;
+}
+
+#searchButton {
+    cursor: pointer;
+}
+
+.my-card-bg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+}
+
+.my-bg-purple {
+    background-color: purple;
+}
+
+.my-bg-dark-green {
+    background-color: rgb(0, 56, 0);
+}
+
+.my-bg-brown {
+    background-color: brown;
+}
+
+.my-bg-acqua {
+    background-color: aqua;
+}
+
+.my-bg-antico {
+    background-color: burlywood;
+}
+
+.my-bg-silver {
+    background-color: silver;
+}

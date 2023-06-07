@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik+Puddles&display=swap');
+
+:root {
+    font-size: 14px;
+}
+
+h1 {
+    font-family: 'Rubik Puddles', cursive;
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: blue;
+}
+
+p, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#initial-par {
+    font-size: 1.2rem;
+}
+
+.my-bg-image {
+    background-image: url(https://static.vecteezy.com/ti/vettori-gratis/p3/5894082-corporate-forme-geometriche-sfondo-colorato-a-banner-usati-poster-carte-sito-web-brochure-gratuito-vettoriale.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.my-card {
+    /* background-color: rgba(208, 1, 255, 0.295); */
+    background-image: url('https://images2-wpc.corriereobjects.it/_SwKDkt4yugg2QDWxP8SFfnghCo=/fit-in/1200x800/style.corriere.it/assets/uploads/2022/12/film-natale-2022-feste-1200-2.jpg');
+    height: 50vh;
+}
+
+.my-red-button {
+    /* background-color: rgb(50, 205, 73); */
+    background-color: rgb(205, 20, 20);
+    color: white;
+    transition: 500ms;
+    border: 1px solid white;
+}
+
+.my-red-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.velina {
+    background-color: rgba(0, 0, 0, 0.711);
+    /* filter: blur(1px); */
+}
+
+input {
+    color: black !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+
+.back-trasp {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,102,1) 100%, rgba(0,212,255,1) 100%);
+    border: none;
+}
+
