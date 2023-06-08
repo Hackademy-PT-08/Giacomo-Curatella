@@ -27,6 +27,7 @@ async function singlePoke(nome) {
 
 //create data
 function createData(target, pokemon) {
+    console.log(pokemon)
     nomePokemon.innerHTML = pokemon.species.name
     let myTemplate = `
         <!-- foto più info -->
@@ -35,7 +36,9 @@ function createData(target, pokemon) {
             <div class="row justify-content-center gap-1 flex-nowrap">
               <!-- contenitore immagine -->
               <div class="col-6 d-flex justify-content-center shadow p-4 rounded-3 position-relative">
-                <img src="${pokemon.sprites.other.dream_world.front_default}" alt="" id="img" class="img-fluid">
+
+                <img src="${pokemon.sprites.other.dream_world.front_default}" class="img-fluid">
+
                 ${genSexForMe()}
               </div>
               <!-- contenitore dati lato destro -->
@@ -213,6 +216,36 @@ function genMyIndexes(obj) {
     return indexes;
 }
 
+//carosello immagini
+// function getCarousel(obj) {
+//     let elementForAppend = ``;
+//     //array di appoggio che conterrà i link delle foto
+//     let myLinkList = [];
+//     //cicliamo le chiavi e nel caso corrispondono a stringa le pushamo nell'array dei links
+//     for(let value in obj.sprites) {
+//         let appoggio = obj.sprites[value]
+//         if(typeof(appoggio) === "string") {
+//             myLinkList.push(appoggio)
+//         }
+//     }
+//     console.log(myLinkList)
+//     for(let i=0; i<myLinkList.length; i++){
+//         if(i === 0){
+//             elementForAppend += `<div class="carousel-item active my-bg-adapter" style="background-image: url('${myLinkList[i]}')">
+                                
+//                                 </div>
+//                             `;
+//         }else if(i === 3) {
+//             elementForAppend += ``;
+//         } else {
+//             elementForAppend += `<div class="carousel-item my-bg-adapter" style="background-image: url('${myLinkList[i]}')">
+                                
+//                                 </div>
+//                             `;
+//         }
+//     }
+//     return elementForAppend;
+// }
 
 // execution
 singlePoke(nome)

@@ -35,7 +35,7 @@ function createCards(target, obj) {
             .then((singlePokemon) => {
                 spinner.classList.add('d-none');
                 let col = document.createElement('div');
-                col.classList.add('col-12', 'col-sm-6', 'col-lg-3', 'col-xl-2')
+                col.classList.add('col-12', 'col-sm-6', 'col-lg-3', 'col-xl-2', 'my-cursor')
                 let card = `
                 <div class="card shadow-lg p-3 mb-4">
                     <div class="my-card-bg" style="background-image: url('${singlePokemon.sprites.other.dream_world.front_default}')"></div>
@@ -63,7 +63,7 @@ async function createCardsByName(target, pokemon) {
         const obj2 = await response2.json();
         spinner.classList.add('d-none');
         let col = document.createElement('div');
-                col.classList.add('col-12', 'col-8', 'm-auto')
+                col.classList.add('col-12', 'col-8', 'm-auto', 'my-cursor')
                 let card = `
                 <div class="card shadow-lg p-3 mb-4">
                     <div class="my-card-bg" style="background-image: url('${obj2.sprites.other.dream_world.front_default}')"></div>

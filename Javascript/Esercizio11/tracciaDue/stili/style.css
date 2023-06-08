@@ -45,3 +45,28 @@ body {
 .my-bg-silver {
     background-color: silver;
 }
+
+.my-cursor {
+    cursor: pointer;
+}
+
+.my-bg-adapter {
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.arrow-color {
+    color: black;
+}
+
+.col-12.col-sm-6.col-lg-3.col-xl-2:hover {
+    transform: scale(0.9);
+    transition: 600ms;
+}
+
+.col-12.col-8:hover {
+    transform: scale(0.9);
+    transition: 600ms;
+}
