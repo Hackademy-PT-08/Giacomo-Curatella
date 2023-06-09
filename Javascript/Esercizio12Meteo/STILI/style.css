@@ -1,0 +1,22 @@
+.sfondo {
+    background-image: url('../IMG/bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contenitore {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.145);
+    height: 100vh;
+}
+
+.form-control:focus {
+    border-color: red;
+    box-shadow: inset 0 0px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgb(255, 0, 0);
+}
+
+.my-bg {
+    background-color: rgba(255, 255, 255, 0.189);
+}

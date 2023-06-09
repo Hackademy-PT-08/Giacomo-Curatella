@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meteo API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./STILI/style.css">
+  </head>
+  <body>
+
+    <main class="position-relative">
+        <div class="text-center vh-100 d-flex align-items-center justify-content-center" id="spinner">
+            <div class="spinner-border text-primary" role="status" style="height: 20rem; width: 20rem;">
+            </div>
+        </div>
+        <section class="sfondo" id="principale">
+            <section class="contenitore container-fluid">
+                <!-- TESTATA DEL SITO -->
+                <section>
+                    <header class="container">
+                        <div class="row py-5 d-flex justify-content-center">
+                            <div class="col-6 d-flex justify-content-center text-white">
+                                <div class="row ">
+                                    <div class="col-12 d-flex flex-column align-items-center justify-content-center" id="dataNumerica">
+                                        <!-- DATA -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex justify-content-center text-white align-items-center" id="orario">
+                                <!-- ORARIO -->
+                                
+                            </div>
+                            <div class="col-12 d-flex justify-content-center mt-5">
+                                <h1 class="text-white display-2">MeteoFetchando.it</h1>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- SEARCHBAR -->
+                    <section class="row justify-content-center py-5">
+                        <div class="col-12 col-md-8">
+                            <div class="row jsutify-content-center py-3 text-white fs-5">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <p><strong>Località corrente:</strong> <span id="cittaCorrente"></span></p>
+                                </div>
+                            </div>
+                            <form class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-cloud-sun-rain fa-2x text-primary"></i></span>
+                                <input type="text" class="form-control form-control-lg text-primary" placeholder="Nome città..." aria-label="Username" aria-describedby="basic-addon1" id="userInput">
+                                <button class="btn btn-primary px-5" type="button" id="button-addon2">Cerca</button>
+                            </form>
+                        </div>
+                    </section>
+                </section>
+
+
+                <!-- PARTE DEDICATA AI RISULTATI -->
+                <section>
+                    <div class="text-center py-5" id="spinner2">
+                        <div class="spinner-border text-white" role="status" style="height: 6rem; width: 6rem;">
+                        </div>
+                    </div>
+                    <section id="datiCitta">
+                        <section class="container py-md-5">
+                            <div class="row justify-content-center my-bg shadow p-5 rounded-4">
+                                <div class="col-md-4 d-flex jusify-content-center" id="localita">
+                                   
+                                </div>
+                                <div class="col-md-3 d-flex jusify-content-center" id="gradi">
+                                    
+                                </div>
+                                <div class="col-md-2 d-flex align-items-center" id="icona">
+                                    
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+
+
+
+    <script src="./JS/main.js"></script>
+    <script src="https://kit.fontawesome.com/018c0fd7b3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
